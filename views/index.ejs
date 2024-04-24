@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Usopp</title>
+  </head>
+  <body>
+    <h2>B99 Words Of Wisdom</h2>
+    <% for(let chat of chats){ %>
+    <div class="chat">
+      <div class="editdel">
+        <form action="/chats/<%= chat._id %>/edit" method="GET" class="editbutton">
+          <button class="edittext">edit</button>
+        </form>
+        <form method="POST" action="/chats/<%= chat.id %>?_method=DELETE" class="editbutton">
+        <button class="edittext">delete</button>
+        </form>
+        <form action="/chats/<%= chat._id %>" method="get">
+          <button class="edittext">show</button>
+        </form>
+      </div>
+
+
+      <p>From: <em> <%= chat.from %> </em> </p>
+      
+        <p>Said To: <em> <%= chat.to %> </em>  </p>
+        <p>Quote:  </p>
+      <div class="message">
+      <p><%= chat.message %></p>
+      </div>
+    </div>
+    <div class="datetime"></div>
+      <p class="time">Time: <%= chat.created_at.toString().split(" ")[4] %> </p>
+      <p class="date">Date: <%= chat.created_at.toString().split(" ").slice(1, 4).join("-") %> </p>
+      <hr />
+    </div>
+
+    <% } %>
+    <form method="GET"  action="/chats/new">
+        <button class="addquote">+</button>
+    </form>
+    <h3> The End</h3>
+  </body>
+</html>

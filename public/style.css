@@ -1,0 +1,118 @@
+.chat{
+    background-color: #ffffff;
+    padding: 2rem;
+    border: solid black;
+    border-radius: 5px;
+    padding-top: 0rem;
+}
+body{
+    background-color: #ff385c;
+}
+.message{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: solid black;
+    box-shadow: 10px 10px;
+}
+h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.addquote{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    border: solid rgb(133, 75, 5);
+    font-size: large;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(255, 186, 59);
+}
+
+.formflexbox{
+    display: flex;
+    gap: 5px;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 5px 5px;
+    max-width: 20rem;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+
+.input{
+    padding: 10px;
+    background-color: rgb(247, 246, 246);
+    border: solid rgb(147, 147, 147);
+}
+
+.button{
+    background-color: rgba(255, 186, 59, 0.876);
+    padding: 1rem;
+    border: none;
+    font-size:medium;
+    border-radius: 2rem;
+}
+button:hover{
+    background-color: rgb(180, 108, 0);
+    color: #ffffff;
+}
+
+.time{
+    font-size: smaller;
+    margin: 0;
+    margin-top: 4px;
+    color: #ebebeb;
+    display: inline;
+}
+.date{
+    font-size: smaller;
+    margin: 0;
+    margin-top: 4px;
+    color: #ebebeb;
+    display: inline;
+}
+
+.editbutton{
+    text-align: right;
+    padding: 10px;
+
+}
+.edittext{
+    border: solid black;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
+    background-color: rgb(227, 227, 227);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.editdel{
+    display: flex;
+    flex-direction: row;
+    justify-items:right;
+}
+
+.editinfo{
+    text-align: center;
+    display: inline-block;
+    margin: auto auto;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 162, 41);
+}
